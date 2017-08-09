@@ -22,7 +22,7 @@ function renderButtons(topic,classAdd,areaToAdd){
 
 $(document).on("click", ".searchButton", function(){
 	var type = $(this).data("type");
-	var queryUrl = "http://api.giphy.com/v1/gifs/search?q="+type+"&api_key=7b84641fc1d24b70a53369fb906e559f&limit=10";
+	var queryUrl = "https://api.giphy.com/v1/gifs/search?q="+type+"&api_key=7b84641fc1d24b70a53369fb906e559f&limit=10";
 	$.ajax({url:queryUrl, method: "GET"})
 	.done(function(response){
 		console.log(response);
